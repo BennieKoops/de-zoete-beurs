@@ -7,3 +7,5 @@ wijzigingen:
 0.03 git installeren (git init)
 
 0.04 git ignore bestand aangemaakt
+
+0.05 git lokaal aan github repository linken
