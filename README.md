@@ -17,3 +17,5 @@ wijzigingen:
 0.08 npm init draaien
 
 0.09 NPM express body-parser ejs mongoose instaleren
+
+0.1 requires instellen in app.js
