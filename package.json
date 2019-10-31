@@ -1,0 +1,19 @@
+{
+  "name": "de-zoete-beurs",
+  "version": "1.0.0",
+  "description": "oefening pagina waarin ik een website bouw voor een fictief restaurant (de zoete beurs).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BennieKoops/de-zoete-beurs.git"
+  },
+  "author": "Bennie Koops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BennieKoops/de-zoete-beurs/issues"
+  },
+  "homepage": "https://github.com/BennieKoops/de-zoete-beurs#readme"
+}
