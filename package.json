@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/BennieKoops/de-zoete-beurs/issues"
   },
-  "homepage": "https://github.com/BennieKoops/de-zoete-beurs#readme"
+  "homepage": "https://github.com/BennieKoops/de-zoete-beurs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.7"
+  }
 }

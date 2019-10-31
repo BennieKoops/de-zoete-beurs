@@ -15,3 +15,5 @@ wijzigingen:
 0.07 app.js views/index.ejs views/partials/header.ejs views/partials/footer.ejs views/catchall.ejs aanmaken
 
 0.08 npm init draaien
+
+0.09 NPM express body-parser ejs mongoose instaleren
