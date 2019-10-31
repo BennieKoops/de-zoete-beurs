@@ -9,3 +9,5 @@ wijzigingen:
 0.04 git ignore bestand aangemaakt
 
 0.05 git lokaal aan github repository linken
+
+0.06 basis folder structuur aanmaken (/views/partials & /public)
