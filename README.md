@@ -19,3 +19,5 @@ wijzigingen:
 0.09 NPM express body-parser ejs mongoose instaleren
 
 0.1 requires instellen in app.js
+
+0.11 viewengine instellen

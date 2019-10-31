@@ -4,3 +4,6 @@ const   express     = require("express"),
         bodyparser  = require("body-parser");
 
 let app = express();
+
+// viewengine moet boven de routes staan
+app.set("viewengine", "ejs");
