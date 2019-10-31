@@ -11,3 +11,5 @@ wijzigingen:
 0.05 git lokaal aan github repository linken
 
 0.06 basis folder structuur aanmaken (/views/partials & /public)
+
+0.07 app.js views/index.ejs views/partials/header.ejs views/partials/footer.ejs views/catchall.ejs aanmaken
