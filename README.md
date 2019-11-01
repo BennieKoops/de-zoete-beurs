@@ -61,3 +61,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.29 H1 op catch all pagina zetten
 
 0.3 afbeelding op catch all pagina  zetten
+
+0.31 knop naar de hoofdpagina op catch all pagina zetten
