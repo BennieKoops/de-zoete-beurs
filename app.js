@@ -8,6 +8,9 @@ let app = express();
 // viewengine moet boven de routes staan
 app.set("view engine", "ejs");
 
+// static geeft een standaard map aan waarin bijvoorbeeld CSS bestanden staan
+app.use(express.static("public"));
+
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");
@@ -15,7 +18,7 @@ app.get("/", function (req, res) {
 
 // catch all pagina
 app.get("*", function (req, res) {
-    res.render("catchall")
+    res.render("catchall");
 });
 
 // poort waarop de server luistert en reageert

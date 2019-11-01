@@ -51,3 +51,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.24 public/stylesheets aanmaken
 
 0.25 public/stylesheets/app.css aanmaken
+
+0.26 static express instellen voor public folder
