@@ -33,3 +33,5 @@ wijzigingen:
 0.16 HTML einde in footer.ejs zetten
 
 0.17 tijdelijke links naar trello en github repository in footer.ejs zetten
+
+0.18 koppeling naar semantic ui cdn in header.ejs zetten
