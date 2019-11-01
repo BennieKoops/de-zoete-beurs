@@ -43,3 +43,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.2 header en footer koppellen in index.ejs + br in footer p element 
 
 0.21 navbar in header.ejs zetten
+
+0.22 naam restaurant met icoon in navbar zetten
