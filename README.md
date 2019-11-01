@@ -41,3 +41,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.19 H1 en P gevuld met lorem ipsum in index.ejs zetten
 
 0.2 header en footer koppellen in index.ejs + br in footer p element 
+
+0.21 navbar in header.ejs zetten
