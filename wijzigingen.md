@@ -1,4 +1,6 @@
 
+0.35 afbeelding op catchall pagina verkleinen met CSS + link om button gezet zodat de hele button linkt naar hoofdpagina
+
 0.34 wijzigingen verplaatsen van readme naar wijzigingen bestand.
 
 0.33 wijzigingen bestand aanmaken
