@@ -29,3 +29,5 @@ wijzigingen:
 0.14 app.get instellen voor catch all
 
 0.15 HTML start in header zetten
+
+0.16 HTML einde in footer.ejs zetten
