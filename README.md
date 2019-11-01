@@ -21,3 +21,5 @@ wijzigingen:
 0.1 requires instellen in app.js
 
 0.11 viewengine instellen
+
+0.12 poort aangeven waarop node luistert
