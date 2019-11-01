@@ -65,3 +65,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.31 knop naar de hoofdpagina op catch all pagina zetten
 
 0.32 header en footer linken op catch all pagina
+
+0.33 wijzigingen bestand aanmaken
