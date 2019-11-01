@@ -31,3 +31,5 @@ wijzigingen:
 0.15 HTML start in header zetten
 
 0.16 HTML einde in footer.ejs zetten
+
+0.17 tijdelijke links naar trello en github repository in footer.ejs zetten
