@@ -47,3 +47,7 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.22 naam restaurant met icoon in navbar zetten
 
 0.23 Home toevoegen in navbar, verwijst naar "/" + link tag om naam restaurant en icoon die naar "/" verwijst
+
+0.24 public/stylesheets aanmaken
+
+0.25 public/stylesheets/app.css aanmaken
