@@ -55,3 +55,5 @@ B0.11.1 viewengine was niet goed ingesteld.
 0.26 static express instellen voor public folder
 
 0.27 app.css linken in header
+
+0.28 icoon 2.5em maken met eigen css
