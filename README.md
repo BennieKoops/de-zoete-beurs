@@ -23,3 +23,5 @@ wijzigingen:
 0.11 viewengine instellen
 
 0.12 poort aangeven waarop node luistert
+
+0.13 app.get instellen voor landingspagina
