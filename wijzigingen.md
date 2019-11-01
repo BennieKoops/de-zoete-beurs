@@ -1,4 +1,6 @@
 
+0.36 footer onder aan de pagina zetten
+
 0.35 afbeelding op catchall pagina verkleinen met CSS + link om button gezet zodat de hele button linkt naar hoofdpagina
 
 0.34 wijzigingen verplaatsen van readme naar wijzigingen bestand.
