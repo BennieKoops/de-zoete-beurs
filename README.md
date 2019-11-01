@@ -27,3 +27,5 @@ wijzigingen:
 0.13 app.get instellen voor landingspagina
 
 0.14 app.get instellen voor catch all
+
+0.15 HTML start in header zetten
