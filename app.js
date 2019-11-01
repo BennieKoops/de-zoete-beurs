@@ -10,8 +10,13 @@ app.set("viewengine", "ejs");
 
 // landingspagina
 app.get("/", function (req, res) {
-    res.render("index")
-})
+    res.render("index");
+});
+
+// catch all pagina
+app.get("*", function (req, res) {
+    res.render("catchall")
+});
 
 // poort waarop de server luistert en reageert
 app.listen(3000, function () {

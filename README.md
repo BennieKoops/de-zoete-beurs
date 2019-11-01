@@ -25,3 +25,5 @@ wijzigingen:
 0.12 poort aangeven waarop node luistert
 
 0.13 app.get instellen voor landingspagina
+
+0.14 app.get instellen voor catch all
