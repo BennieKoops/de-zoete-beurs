@@ -6,7 +6,7 @@ const   express     = require("express"),
 let app = express();
 
 // viewengine moet boven de routes staan
-app.set("viewengine", "ejs");
+app.set("view engine", "ejs");
 
 // landingspagina
 app.get("/", function (req, res) {

@@ -35,3 +35,5 @@ wijzigingen:
 0.17 tijdelijke links naar trello en github repository in footer.ejs zetten
 
 0.18 koppeling naar semantic ui cdn in header.ejs zetten
+
+B0.11.1 viewengine was niet goed ingesteld.
