@@ -37,3 +37,5 @@ wijzigingen:
 0.18 koppeling naar semantic ui cdn in header.ejs zetten
 
 B0.11.1 viewengine was niet goed ingesteld.
+
+0.19 H1 en P gevuld met lorem ipsum in index.ejs zetten
