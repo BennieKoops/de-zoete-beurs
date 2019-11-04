@@ -11,6 +11,13 @@ app.set("view engine", "ejs");
 // static geeft een standaard map aan waarin bijvoorbeeld CSS bestanden staan
 app.use(express.static("public"));
 
+// mongoose set is apart gedefinieerd omdat er meerdere databases gebruikt gaan worden
+mongoose.set('useUnifiedTopology', true);
+mongoose.set('useNewUrlParser', true);
+
+// mongoose db koppelingen
+mongoose.connect("mongodb://localhost:27017/menu");
+
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");

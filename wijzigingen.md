@@ -1,3 +1,5 @@
+1.08 koppeling naar menu database instellen
+
 1.07 models folder aanmaken
 
 1.06 views/menu/drinken/new.ejs aanmaken
