@@ -1,3 +1,5 @@
+B1.09.1 typefout op lijn 12 "bodyParser" moet "bodyparser" zijn
+
 1.15 app.get instellen voor "/menu"
 
 1.14 mongoose.model, require en schema instellen voor drinken

@@ -9,7 +9,7 @@ let app = express();
 app.set("view engine", "ejs");
 
 // bodyparser instelling
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyparser.urlencoded({extended: true}));
 
 // static geeft een standaard map aan waarin bijvoorbeeld CSS bestanden staan
 app.use(express.static("public"));
