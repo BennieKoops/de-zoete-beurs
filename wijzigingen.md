@@ -1,3 +1,5 @@
+1.2 radio inputs voor gang selectie in gerechten/new.ejs zetten
+
 B1.18.1 header en footer worden niet gevonden, ../../ voor partials/header en  partials/footer gezet, worden nu wel gevonden
 
 1.19 H1 element in gerechten/new.ejs zetten
