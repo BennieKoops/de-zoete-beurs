@@ -27,12 +27,12 @@ var gerechten   = require("./models/gerechten"),
 
 // landingspagina
 app.get("/", function (req, res) {
-    res.render("index", {gerechten:gerechten, drinken,drinken});
+    res.render("index");
 });
 
 // menupagina
 app.get("/menu", function (req, res) {
-    res.render("menu/menu");
+    res.render("menu/menu", {gerechten:gerechten, drinken,drinken});
 });
 
 // nieuw gerecht pagina
