@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 var drinkenSchema = mongoose.Schema({
-    wijnAlcoholFrisKoffie: String,
+    soortDrinken: String,
     wijnSoort: String,
     naamDrinken: String,
     prijs: Number,

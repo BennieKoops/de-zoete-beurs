@@ -1,3 +1,5 @@
+1.18 header en footer in gerechten/new.ejs koppelen en wijnAlcoholFrisKoffie hernoemt naar soortDrinken in models/drinken.js
+
 1.17 app.get instellen voor "/menu/drinken/new"
 
 B1.15.1 model doorgave bij index ingesteld ipv menu, doorgave verplaatst naar menu
