@@ -1,3 +1,5 @@
+1.11 model js file aanmakenvoor drinken
+
 1.1 model js file aanmaken voor gerechten
 
 1.09 app use bodyparser urlencoded instellen
