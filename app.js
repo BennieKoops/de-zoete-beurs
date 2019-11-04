@@ -27,7 +27,12 @@ var gerechten   = require("./models/gerechten"),
 
 // landingspagina
 app.get("/", function (req, res) {
-    res.render("index");
+    res.render("index", {gerechten:gerechten, drinken,drinken});
+});
+
+// menupagina
+app.get("/menu", function (req, res) {
+    res.render("menu")
 });
 
 // catch all pagina

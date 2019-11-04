@@ -1,3 +1,5 @@
+1.15 app.get instellen voor "/menu"
+
 1.14 mongoose.model, require en schema instellen voor drinken
 
 1.13 mongoose.model, require en schema instellen voor gerechten
