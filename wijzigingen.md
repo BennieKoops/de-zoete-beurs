@@ -1,3 +1,5 @@
+1.25 H1 element in drinken/new.ejs zetten
+
 1.24 checkbox input voor online bestelbaar in gerechten/new.ejs zetten en submit button toevoegen aan form
 
 1.23 radio input voor dieet (vlees, vis, vega) in gerechten/new.ejs zetten
