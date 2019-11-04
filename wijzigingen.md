@@ -1,3 +1,5 @@
+1.26 radio input voor soort drinken  in drinken/new.ejs zetten
+
 1.25 H1 element in drinken/new.ejs zetten
 
 1.24 checkbox input voor online bestelbaar in gerechten/new.ejs zetten en submit button toevoegen aan form

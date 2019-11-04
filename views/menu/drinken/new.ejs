@@ -1,3 +1,32 @@
             <div>
-                <h1>Nieuw gerecht</h1>
+                <h1>Nieuw drankje</h1>
             </div>
+            <form action="/menu" method="post" class="ui form">
+                <div class="inline fields">
+                    <label>Geef aan wat voor drankje het is:</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="soortDrinken" value="wijn">
+                            <label>Wijn</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="soortDrinken" value="bier">
+                            <label>Bier</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="soortDrinken" value="fris">
+                            <label>Fris</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="soortDrinken" value="koffie">
+                            <label>Koffie</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
