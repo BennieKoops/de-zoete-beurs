@@ -1,3 +1,5 @@
+1.23 radio input voor dieet (vlees, vis, vega) in gerechten/new.ejs zetten
+
 1.22 checkbox inputs voor alergenen in gerechten/new.ejs zetten
 
 1.21 text input voor naam gerecht in gerechten/new.ejs zetten
