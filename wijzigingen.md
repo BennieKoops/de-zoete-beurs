@@ -1,3 +1,10 @@
+1.04 views/menu/menu.ejs aanmaken
+
+1.03 views/menu/gerechten aanmaken
+
+1.02 views/menu/drinken aanmaken
+
+1.01 views/menu folder aanmaken
 
 0.36 footer onder aan de pagina zetten
 
