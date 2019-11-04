@@ -40,6 +40,11 @@ app.get("/menu/gerechten/new", function (req, res) {
    res.render("menu/gerechten/new");
 });
 
+// nieuw drankje pagina
+app.get("/menu/drinken/new", function (req, res) {
+    res.render("menu/drinken/new");
+});
+
 // catch all pagina
 app.get("*", function (req, res) {
     res.render("catchall");

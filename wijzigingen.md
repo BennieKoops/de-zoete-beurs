@@ -1,3 +1,5 @@
+1.17 app.get instellen voor "/menu/drinken/new"
+
 B1.15.1 model doorgave bij index ingesteld ipv menu, doorgave verplaatst naar menu
 
 1.16 app.get instellen voor "/menu/gerechten/new"
