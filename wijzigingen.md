@@ -1,3 +1,5 @@
+1.27 header en footer in drinken/new.ejs koppelen
+
 1.26 radio input voor soort drinken  in drinken/new.ejs zetten
 
 1.25 H1 element in drinken/new.ejs zetten
