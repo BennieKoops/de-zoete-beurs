@@ -1,3 +1,5 @@
+1.06 views/menu/drinken/new.ejs aanmaken
+
 1.05 views/menu/gerechten/new.ejs aanmaken
 
 1.04 views/menu/menu.ejs aanmaken
