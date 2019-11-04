@@ -1,3 +1,5 @@
+1.1 model js file aanmaken voor gerechten
+
 1.09 app use bodyparser urlencoded instellen
 
 1.08 koppeling naar menu database instellen
