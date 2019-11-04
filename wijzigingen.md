@@ -1,3 +1,5 @@
+1.19 H1 element in gerechten/new.ejs zetten
+
 1.18 header en footer in gerechten/new.ejs koppelen en wijnAlcoholFrisKoffie hernoemt naar soortDrinken in models/drinken.js
 
 1.17 app.get instellen voor "/menu/drinken/new"
