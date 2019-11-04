@@ -1,3 +1,5 @@
+1.12 require voor mongoose instellen in model files
+
 1.11 model js file aanmakenvoor drinken
 
 1.1 model js file aanmaken voor gerechten

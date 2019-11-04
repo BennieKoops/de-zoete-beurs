@@ -21,6 +21,10 @@ mongoose.set('useNewUrlParser', true);
 // mongoose db koppelingen
 mongoose.connect("mongodb://localhost:27017/menu");
 
+// requires voor de models
+var gerechten   = require("./models/gerechten"),
+    drinken     = require("./models/drinken");
+
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");
