@@ -32,7 +32,12 @@ app.get("/", function (req, res) {
 
 // menupagina
 app.get("/menu", function (req, res) {
-    res.render("menu")
+    res.render("menu/menu");
+});
+
+// nieuw gerecht pagina
+app.get("/menu/gerechten/new", function (req, res) {
+   res.render("menu/gerechten/new");
 });
 
 // catch all pagina

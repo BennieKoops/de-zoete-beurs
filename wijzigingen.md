@@ -1,3 +1,5 @@
+1.16 app.get instellen voor "/menu/gerechten/new"
+
 B1.09.1 typefout op lijn 12 "bodyParser" moet "bodyparser" zijn
 
 1.15 app.get instellen voor "/menu"
