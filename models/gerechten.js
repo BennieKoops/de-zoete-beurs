@@ -6,7 +6,9 @@ var gerechtenSchema = mongoose.Schema({
     prijs: Number,
     alergenen: [{
         gluten: String,
-        lactose: String
+        lactose: String,
+        noten: String,
+        schaaldier: String
     }],
     dieet: String,
     bestelbaar: String

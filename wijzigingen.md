@@ -1,3 +1,5 @@
+1.22 checkbox inputs voor alergenen in gerechten/new.ejs zetten
+
 1.21 text input voor naam gerecht in gerechten/new.ejs zetten
 
 1.2 radio inputs voor gang selectie in gerechten/new.ejs zetten
