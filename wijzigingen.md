@@ -1,3 +1,5 @@
+1.09 app use bodyparser urlencoded instellen
+
 1.08 koppeling naar menu database instellen
 
 1.07 models folder aanmaken
