@@ -1,3 +1,5 @@
+1.36 H1 element voor Menu op menu pagina zetten en header en footer linken
+
 1.35 POST route instellen voor drinken
 
 1.34 POST route instellen voor gerechten en B1.13.1 in het gerechten schema stond allergenen array met object erin, het object zorgde ervoor dat het nieuw gerecht formulier niet gepost kon worden als er allergenen aangegeven werden. object verwijderd.
