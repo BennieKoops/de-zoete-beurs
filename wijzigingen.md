@@ -1,3 +1,5 @@
+B1.26.1 div werkt niet als button, veranderd in input submit in beide formulieren.
+
 1.33 number input veld voor prijs in gerechten/new.ejs zetten
 
 1.32 checkbox input voor online bestelbaarheid en doorgeef knop in drinken/new.ejs zetten
