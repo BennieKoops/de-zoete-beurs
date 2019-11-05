@@ -1,3 +1,5 @@
+1.35 POST route instellen voor drinken
+
 1.34 POST route instellen voor gerechten en B1.13.1 in het gerechten schema stond allergenen array met object erin, het object zorgde ervoor dat het nieuw gerecht formulier niet gepost kon worden als er allergenen aangegeven werden. object verwijderd.
 
 B1.3.1 number input accepteert geen decimalen. step ".01" toegevoegd

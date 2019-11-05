@@ -38,7 +38,7 @@ app.get("/menu", function (req, res) {
 app.post("/menu", function (req, res) {
     var gang = req.body.gang;
     if (gang !== undefined) {
-        var naamGerecht = req.body.naamGerecht,
+        let naamGerecht = req.body.naamGerecht,
             prijs = req.body.prijs,
             alergenen = req.body.alergenen,
             dieet = req.body.dieet,
@@ -58,7 +58,27 @@ app.post("/menu", function (req, res) {
             }
         });
     } else {
-        
+        let soortDrinken = req.body.soortDrinken,
+            wijnSoort = req.body.wijnSoort,
+            naamDrinken = req.body.naamDrinken,
+            prijs = req.body.prijs,
+            wijnFlesPrijs = req.body.wijnFlesPrijs,
+            bestelbaar = req.body.bestelbaar;
+        var nieuwDrankje = { 
+            soortDrinken: soortDrinken,
+            wijnSoort: wijnSoort,
+            naamDrinken: naamDrinken,
+            prijs: prijs,
+            wijnFlesPrijs: wijnFlesPrijs,
+            bestelbaar: bestelbaar
+        }
+        drinken.create(nieuwDrankje, function (err, drankje) {
+            if (err) {
+                console.log("er is iets fout gegaan" + err);
+            } else {
+                res.redirect("/menu");
+            }
+        });
     }
     console.log(gang)
 });
