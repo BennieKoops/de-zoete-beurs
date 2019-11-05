@@ -1,3 +1,5 @@
+B1.3.1 number input accepteert geen decimalen. step ".01" toegevoegd
+
 B1.26.1 div werkt niet als button, veranderd in input submit in beide formulieren.
 
 1.33 number input veld voor prijs in gerechten/new.ejs zetten
