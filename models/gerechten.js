@@ -4,12 +4,7 @@ var gerechtenSchema = mongoose.Schema({
     gang: String,
     naamGerecht: String,
     prijs: Number,
-    alergenen: [{
-        gluten: String,
-        lactose: String,
-        noten: String,
-        schaaldier: String
-    }],
+    alergenen: [],
     dieet: String,
     bestelbaar: String
 });

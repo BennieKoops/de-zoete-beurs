@@ -35,6 +35,34 @@ app.get("/menu", function (req, res) {
     res.render("menu/menu", {gerechten:gerechten, drinken,drinken});
 });
 
+app.post("/menu", function (req, res) {
+    var gang = req.body.gang;
+    if (gang !== undefined) {
+        var naamGerecht = req.body.naamGerecht,
+            prijs = req.body.prijs,
+            alergenen = req.body.alergenen,
+            dieet = req.body.dieet,
+            bestelbaar = req.body.bestelbaar;
+        var nieuwGerecht = {
+            naamGerecht: naamGerecht,
+            prijs: prijs,
+            alergenen: alergenen,
+            dieet: dieet,
+            bestelbaar: bestelbaar
+        }
+        gerechten.create(nieuwGerecht, function (err, gerecht) {
+            if (err) {
+                console.log("er is iets fout gegaan" + err);
+            } else {
+                res.redirect("/menu");
+            }
+        });
+    } else {
+        
+    }
+    console.log(gang)
+});
+
 // nieuw gerecht pagina
 app.get("/menu/gerechten/new", function (req, res) {
    res.render("menu/gerechten/new");
