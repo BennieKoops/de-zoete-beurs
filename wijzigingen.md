@@ -1,3 +1,5 @@
+1.31 number input voor prijs per wijnfles  in drinken/new.ejs zetten
+
 1.3 number input voor prijs  in drinken/new.ejs zetten
 
 1.29 tekst input voor naam drinken  in drinken/new.ejs zetten
