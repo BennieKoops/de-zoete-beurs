@@ -1,3 +1,5 @@
+1.32 checkbox input voor online bestelbaarheid en doorgeef knop in drinken/new.ejs zetten
+
 1.31 number input voor prijs per wijnfles  in drinken/new.ejs zetten
 
 1.3 number input voor prijs  in drinken/new.ejs zetten
