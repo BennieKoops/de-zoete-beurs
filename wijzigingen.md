@@ -1,3 +1,5 @@
+1.29 tekst input voor naam drinken  in drinken/new.ejs zetten
+
 1.28 radio input voor wijnsoort  in drinken/new.ejs zetten
 
 1.27 header en footer in drinken/new.ejs koppelen
