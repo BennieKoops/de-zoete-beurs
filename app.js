@@ -25,6 +25,32 @@ mongoose.connect("mongodb://localhost:27017/menu");
 var gerechten   = require("./models/gerechten"),
     drinken     = require("./models/drinken");
 
+    
+function bouwSoepenLijst(gang) {
+    return new Promise( function (resolve, reject) {
+        gerechten.find({gang: gang}, function (err, gerechtenGang) {
+            var lijstGerechten = [];
+            if (!err) {
+                gerechtenGang.forEach(gerecht => {
+                    var bestaat = false;
+                    // zet een vlag als item al in lijst staat
+                    for (let i = 0; i < lijstGerechten.length; i++) {
+                        if (gerecht.naamGerecht == gerechtenGang[i].naamGerecht)
+                          bestaat = true;
+                    }
+                    if (!bestaat) {
+                        lijstGerechten.push(gerecht);
+                    }
+                });
+                resolve(lijstGerechten);
+            }
+        });
+    });
+}
+
+
+
+//console.log(xyz + "1")
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");
@@ -32,7 +58,18 @@ app.get("/", function (req, res) {
 
 // menupagina
 app.get("/menu", function (req, res) {
-    res.render("menu/menu", {gerechten:gerechten, drinken,drinken});
+    async function bouwMenuLijst() {
+        var soepen = await bouwSoepenLijst('soep').then((lijstGerechten) => {
+            return lijstGerechten;
+        });
+        var voorgerechten = await bouwSoepenLijst('voorgerecht').then((lijstGerechten) => {
+            return lijstGerechten;
+        });
+        var menu = {soepen, voorgerechten}
+        res.render("menu/menu", {menu:menu});
+    }
+    bouwMenuLijst();
+    console.log("aanvraag");
 });
 
 app.post("/menu", function (req, res) {
@@ -44,6 +81,7 @@ app.post("/menu", function (req, res) {
             dieet = req.body.dieet,
             bestelbaar = req.body.bestelbaar;
         var nieuwGerecht = {
+            gang: gang,
             naamGerecht: naamGerecht,
             prijs: prijs,
             alergenen: alergenen,

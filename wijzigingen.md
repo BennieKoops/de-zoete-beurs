@@ -1,3 +1,5 @@
+1.38 weergave van soepen instellen
+
 1.37 knoppen instellen naar de formulieren (nieuw gerecht en nieuw drankje)
 
 1.36 H1 element voor Menu op menu pagina zetten en header en footer linken

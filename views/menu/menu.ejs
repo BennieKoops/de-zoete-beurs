@@ -11,5 +11,21 @@
                     Maak een nieuw drankje <a href="/menu/drinken/new"><button class="ui basic button">Klik hier</button></a>
                 </p>
             </div>
+            <div>
+                <H3>Soepen</H3>
+                <% 
+                menu.soepen.forEach(soep => {
+                    %>
+                        <h4><%= soep.naamGerecht %></h4>
+                        <label>€ <%= soep.prijs %></label>
+                    <%
+                });
+                menu.voorgerechten.forEach(voorgerecht => {
+                    %>
+                        <h4><%= voorgerecht.naamGerecht %></h4>
+                    <%
+                })
+                %>
+            </div>
 
 <% include ../partials/footer %>
