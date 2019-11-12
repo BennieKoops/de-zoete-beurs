@@ -71,6 +71,28 @@ function bouwDrankenLijst(soort) {
     })
 }
 
+async function bouwMenuLijst(menuRoute, res) {
+    let soepen          = await bouwGerechtenLijst('soep'),
+        voorgerechten   = await bouwGerechtenLijst('voorgerecht'),
+        hoofdgerechten  = await bouwGerechtenLijst('hoofdgerecht'),
+        nagerechten     = await bouwGerechtenLijst('nagerecht');
+    
+    let wijnen       = await bouwDrankenLijst('wijn'),
+        bieren       = await bouwDrankenLijst('bier'),
+        frisdranken  = await bouwDrankenLijst('fris'),
+        koffies       = await bouwDrankenLijst('koffie');
+
+    Promise.all(soepen, voorgerechten, hoofdgerechten, nagerechten).then((lijstGerechten) => {
+        return lijstGerechten;
+    });
+
+    Promise.all(wijnen, bieren, frisdranken, koffies).then((lijstDrinken) => {
+        return lijstDrinken;
+    });
+    var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten, wijnen, bieren, frisdranken, koffies}
+        res.render(menuRoute, {menu:menu});
+}
+
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");
@@ -78,41 +100,19 @@ app.get("/", function (req, res) {
 
 // menupagina
 app.get("/menu", function (req, res) {
-    async function bouwMenuLijst() {
-        let soepen          = await bouwGerechtenLijst('soep'),
-            voorgerechten   = await bouwGerechtenLijst('voorgerecht'),
-            hoofdgerechten  = await bouwGerechtenLijst('hoofdgerecht'),
-            nagerechten     = await bouwGerechtenLijst('nagerecht');
-        
-        let wijnen       = await bouwDrankenLijst('wijn'),
-            bieren       = await bouwDrankenLijst('bier'),
-            frisdranken  = await bouwDrankenLijst('fris'),
-            koffies       = await bouwDrankenLijst('koffie');
-
-        Promise.all(soepen, voorgerechten, hoofdgerechten, nagerechten).then((lijstGerechten) => {
-            return lijstGerechten;
-        });
-
-        Promise.all(wijnen, bieren, frisdranken, koffies).then((lijstDrinken) => {
-            return lijstDrinken;
-        });
-
-        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten, wijnen, bieren, frisdranken, koffies}
-        res.render("menu/menu", {menu:menu});
-    }
-    bouwMenuLijst();
+    bouwMenuLijst("menu/menu", res);
     console.log("aanvraag");
 });
 
 app.post("/menu", function (req, res) {
-    var gang = req.body.gang;
+    let gang = req.body.gang;
     if (gang !== undefined) {
         let naamGerecht = req.body.naamGerecht,
             prijs = req.body.prijs,
             alergenen = req.body.alergenen,
             dieet = req.body.dieet,
             bestelbaar = req.body.bestelbaar;
-        var nieuwGerecht = {
+        let nieuwGerecht = {
             gang: gang,
             naamGerecht: naamGerecht,
             prijs: prijs,
@@ -134,7 +134,7 @@ app.post("/menu", function (req, res) {
             prijs = req.body.prijs,
             wijnFlesPrijs = req.body.wijnFlesPrijs,
             bestelbaar = req.body.bestelbaar;
-        var nieuwDrankje = { 
+        let nieuwDrankje = { 
             soortDrinken: soortDrinken,
             wijnSoort: wijnSoort,
             naamDrinken: naamDrinken,

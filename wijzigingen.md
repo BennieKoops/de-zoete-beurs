@@ -1,3 +1,5 @@
+1.42 async functie refactoren naar herbruikbare functie
+
 1.41 weergave voor de rest van de drankjes instellen
 
 1.4 weergave van wijnen instellen
