@@ -26,7 +26,7 @@ var gerechten   = require("./models/gerechten"),
     drinken     = require("./models/drinken");
 
     
-function bouwSoepenLijst(gang) {
+function bouwGerechtenLijst(gang) {
     return new Promise( function (resolve, reject) {
         gerechten.find({gang: gang}, function (err, gerechtenGang) {
             var lijstGerechten = [];
@@ -59,13 +59,15 @@ app.get("/", function (req, res) {
 // menupagina
 app.get("/menu", function (req, res) {
     async function bouwMenuLijst() {
-        var soepen = await bouwSoepenLijst('soep').then((lijstGerechten) => {
+        let soepen          = await bouwGerechtenLijst('soep'),
+            voorgerechten   = await bouwGerechtenLijst('voorgerecht'),
+            hoofdgerechten  = await bouwGerechtenLijst('hoofdgerecht'),
+            nagerechten     = await bouwGerechtenLijst('nagerecht');
+        
+        Promise.all(soepen, voorgerechten, hoofdgerechten, nagerechten).then((lijstGerechten) => {
             return lijstGerechten;
         });
-        var voorgerechten = await bouwSoepenLijst('voorgerecht').then((lijstGerechten) => {
-            return lijstGerechten;
-        });
-        var menu = {soepen, voorgerechten}
+        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten}
         res.render("menu/menu", {menu:menu});
     }
     bouwMenuLijst();

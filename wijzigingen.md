@@ -1,3 +1,5 @@
+1.39 weergave voor de rest van de gerechten instellen & footer css van absolute naar sticky gezet
+
 1.38 weergave van soepen instellen
 
 1.37 knoppen instellen naar de formulieren (nieuw gerecht en nieuw drankje)

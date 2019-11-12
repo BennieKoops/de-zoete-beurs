@@ -12,6 +12,7 @@
                 </p>
             </div>
             <div>
+                <h2>Gerechten</h2>
                 <H3>Soepen</H3>
                 <% 
                 menu.soepen.forEach(soep => {
@@ -20,12 +21,35 @@
                         <label>€ <%= soep.prijs %></label>
                     <%
                 });
+                %>
+                <h3>Voorgerechten</h3>
+                <%
                 menu.voorgerechten.forEach(voorgerecht => {
                     %>
                         <h4><%= voorgerecht.naamGerecht %></h4>
+                        <label>€ <%= voorgerecht.prijs %></label>
                     <%
-                })
+                });
                 %>
+                <h3>Hoofdgerechten</h3>
+                <%
+                menu.hoofdgerechten.forEach(hoofdgerecht => {
+                    %>
+                        <h4><%= hoofdgerecht.naamGerecht %></h4>
+                        <label>€ <%= hoofdgerecht.prijs %></label>
+                    <%
+                });
+                %>
+                <h3>Nagerechten</h3>
+                <%
+                menu.nagerechten.forEach(nagerecht => {
+                    %>
+                        <h4><%= nagerecht.naamGerecht %></h4>
+                        <label>€ <%= nagerecht.prijs %></label>
+                    <%
+                });
+                %>
+
             </div>
 
 <% include ../partials/footer %>

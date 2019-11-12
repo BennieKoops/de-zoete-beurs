@@ -4,7 +4,7 @@ i.icon {
 
 .pagina-container {
     position: relative;
-    min-height: 90.5vh;
+    min-height: 100vh;
 }
 
 .afbeelding.catchall {
@@ -12,7 +12,7 @@ i.icon {
 }
 
 .footer {
-    position: absolute;
+    position: sticky;
     height: 5em;
     background-color: #dcdcdc;
     margin-top: 5em;
