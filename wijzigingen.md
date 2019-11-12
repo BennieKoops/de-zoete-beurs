@@ -1,3 +1,5 @@
+1.41 weergave voor de rest van de drankjes instellen
+
 1.4 weergave van wijnen instellen
 
 1.39 weergave voor de rest van de gerechten instellen & footer css van absolute naar sticky gezet

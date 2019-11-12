@@ -58,6 +58,30 @@
                     <%
                 });
                 %>
+                <h3>Bier</h3>
+                <%
+                menu.bieren.forEach(bier => {
+                    %>
+                        <h4><%= bier.naamDrinken %></h4>
+                    <%
+                });
+                %>
+                <h3>Frisdrank</h3>
+                <%
+                menu.frisdranken.forEach(frisdrank => {
+                    %>
+                        <h4><%= frisdrank.naamDrinken %></h4>
+                    <%
+                });
+                %>
+                <h3>Koffie</h3>
+                <%
+                menu.koffies.forEach(koffie => {
+                    %>
+                        <h4><%= koffie.naamDrinken %></h4>
+                    <%
+                });
+                %>
             </div>
 
 <% include ../partials/footer %>

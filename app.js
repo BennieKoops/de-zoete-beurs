@@ -84,16 +84,20 @@ app.get("/menu", function (req, res) {
             hoofdgerechten  = await bouwGerechtenLijst('hoofdgerecht'),
             nagerechten     = await bouwGerechtenLijst('nagerecht');
         
-        let wijnen  = await bouwDrankenLijst('wijn');
+        let wijnen       = await bouwDrankenLijst('wijn'),
+            bieren       = await bouwDrankenLijst('bier'),
+            frisdranken  = await bouwDrankenLijst('fris'),
+            koffies       = await bouwDrankenLijst('koffie');
 
         Promise.all(soepen, voorgerechten, hoofdgerechten, nagerechten).then((lijstGerechten) => {
             return lijstGerechten;
         });
-        Promise.all(wijnen).then((lijstDrinken) => {
+
+        Promise.all(wijnen, bieren, frisdranken, koffies).then((lijstDrinken) => {
             return lijstDrinken;
         });
 
-        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten, wijnen}
+        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten, wijnen, bieren, frisdranken, koffies}
         res.render("menu/menu", {menu:menu});
     }
     bouwMenuLijst();
