@@ -35,8 +35,9 @@ function bouwGerechtenLijst(gang) {
                     var bestaat = false;
                     // zet een vlag als item al in lijst staat
                     for (let i = 0; i < lijstGerechten.length; i++) {
-                        if (gerecht.naamGerecht == gerechtenGang[i].naamGerecht)
-                          bestaat = true;
+                        if (gerecht.naamGerecht == gerechtenGang[i].naamGerecht){
+                            bestaat = true;
+                        }
                     }
                     if (!bestaat) {
                         lijstGerechten.push(gerecht);
@@ -48,9 +49,28 @@ function bouwGerechtenLijst(gang) {
     });
 }
 
+function bouwDrankenLijst(soort) {
+    return new Promise( function (resolve, reject) {
+        drinken.find({soortDrinken: soort}, function (err, soortDrinken) {
+            var lijstDrinken = [];
+            if (!err) {
+                soortDrinken.forEach(drankje => {
+                    var bestaat = false;
+                    for (let i = 0; i < lijstDrinken.length; i++) {
+                        if (drankje.naamDrinken === soortDrinken[i].naamDrinken){
+                            bestaat = true;
+                        }
+                    }
+                    if (!bestaat) {
+                        lijstDrinken.push(drankje);
+                    }
+                });
+                resolve(lijstDrinken);
+            }
+        });
+    })
+}
 
-
-//console.log(xyz + "1")
 // landingspagina
 app.get("/", function (req, res) {
     res.render("index");
@@ -64,10 +84,16 @@ app.get("/menu", function (req, res) {
             hoofdgerechten  = await bouwGerechtenLijst('hoofdgerecht'),
             nagerechten     = await bouwGerechtenLijst('nagerecht');
         
+        let wijnen  = await bouwDrankenLijst('wijn');
+
         Promise.all(soepen, voorgerechten, hoofdgerechten, nagerechten).then((lijstGerechten) => {
             return lijstGerechten;
         });
-        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten}
+        Promise.all(wijnen).then((lijstDrinken) => {
+            return lijstDrinken;
+        });
+
+        var menu = {soepen, voorgerechten, hoofdgerechten, nagerechten, wijnen}
         res.render("menu/menu", {menu:menu});
     }
     bouwMenuLijst();

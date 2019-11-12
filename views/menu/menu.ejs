@@ -49,7 +49,15 @@
                     <%
                 });
                 %>
-
+                <h2>Dranken</h2>
+                <h3>Wijn</h3>
+                <%
+                menu.wijnen.forEach(wijn => {
+                    %>
+                        <h4><%= wijn.naamDrinken %></h4>
+                    <%
+                });
+                %>
             </div>
 
 <% include ../partials/footer %>
