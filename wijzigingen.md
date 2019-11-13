@@ -1,3 +1,5 @@
+1.44 JS controllers instellen
+
 1.43 routes in eigen bestanden definiëren
 
 1.42 async functie refactoren naar herbruikbare functie
