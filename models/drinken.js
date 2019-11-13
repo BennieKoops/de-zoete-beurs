@@ -6,6 +6,7 @@ var drinkenSchema = mongoose.Schema({
     naamDrinken: String,
     prijs: Number,
     wijnFlesPrijs: Number,
+    beschrijving: String,
     bestelbaar: String
 });
 

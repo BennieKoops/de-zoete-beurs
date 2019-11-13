@@ -80,15 +80,15 @@ exports.menuItem = function (req, res) {
     if (gang !== undefined) {
         let naamGerecht = req.body.naamGerecht,
             prijs = req.body.prijs,
-            alergenen = req.body.alergenen,
             dieet = req.body.dieet,
+            beschrijving = req.body.beschrijving,
             bestelbaar = req.body.bestelbaar;
         let nieuwGerecht = {
             gang: gang,
             naamGerecht: naamGerecht,
             prijs: prijs,
-            alergenen: alergenen,
             dieet: dieet,
+            beschrijving: beschrijving,
             bestelbaar: bestelbaar
         }
         gerechten.create(nieuwGerecht, function (err, gerecht) {
@@ -104,6 +104,7 @@ exports.menuItem = function (req, res) {
             naamDrinken = req.body.naamDrinken,
             prijs = req.body.prijs,
             wijnFlesPrijs = req.body.wijnFlesPrijs,
+            beschrijving = req.body.beschrijving,
             bestelbaar = req.body.bestelbaar;
         let nieuwDrankje = { 
             soortDrinken: soortDrinken,
@@ -111,6 +112,7 @@ exports.menuItem = function (req, res) {
             naamDrinken: naamDrinken,
             prijs: prijs,
             wijnFlesPrijs: wijnFlesPrijs,
+            beschrijving: beschrijving,
             bestelbaar: bestelbaar
         }
         drinken.create(nieuwDrankje, function (err, drankje) {

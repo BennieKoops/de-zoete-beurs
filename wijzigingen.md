@@ -1,3 +1,5 @@
+1.45 textarea voor beschrijving product in formulier gezet en alergenen verwijdert van gerechten
+
 1.44 JS controllers instellen
 
 1.43 routes in eigen bestanden definiëren
