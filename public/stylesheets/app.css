@@ -4,18 +4,27 @@ i.icon {
 
 .pagina-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .afbeelding.catchall {
     width: 25%;
 }
 
+.ui.stackable.two.column.grid {
+    margin-bottom: 5em;
+}
+
+.PP {
+    margin-right: 10px;
+}
+
 .footer {
-    position: sticky;
+    position: fixed;
     height: 5em;
     background-color: #dcdcdc;
     margin-top: 5em;
+    margin-bottom: 0;
     bottom: 0;
     width: 100%;
 }

@@ -73,7 +73,6 @@ async function bouwMenuLijst(route, res) {
 
 exports.maakMenu = function (req, res) {
     bouwMenuLijst("menu/menu", res);
-    console.log("aanvraag");
 }
 exports.menuItem = function (req, res) {
     let gang = req.body.gang;
@@ -106,14 +105,16 @@ exports.menuItem = function (req, res) {
             wijnFlesPrijs = req.body.wijnFlesPrijs,
             beschrijving = req.body.beschrijving,
             bestelbaar = req.body.bestelbaar;
-        let nieuwDrankje = { 
+        var nieuwDrankje = { 
             soortDrinken: soortDrinken,
-            wijnSoort: wijnSoort,
             naamDrinken: naamDrinken,
             prijs: prijs,
             wijnFlesPrijs: wijnFlesPrijs,
             beschrijving: beschrijving,
             bestelbaar: bestelbaar
+        }
+        if (soortDrinken === 'wijn') {
+            nieuwDrankje["wijnSoort"] = wijnSoort;
         }
         drinken.create(nieuwDrankje, function (err, drankje) {
             if (err) {
@@ -123,5 +124,4 @@ exports.menuItem = function (req, res) {
             }
         });
     }
-    console.log(gang)
 }

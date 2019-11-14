@@ -1,102 +1,104 @@
 <% include ../../partials/header %>
 
-            <div>
-                <h1>Nieuw drankje</h1>
-            </div>
-            <form action="/menu" method="post" class="ui form">
-                <div class="inline fields">
-                    <label>Geef aan wat voor drankje het is:</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="soortDrinken" value="wijn" checked="checked">
-                            <label>Wijn</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="soortDrinken" value="bier">
-                            <label>Bier</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="soortDrinken" value="fris">
-                            <label>Fris</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="soortDrinken" value="koffie">
-                            <label>Koffie</label>
-                        </div>
-                    </div>
+            <div class="ui container">
+                <div>
+                    <h1>Nieuw drankje</h1>
                 </div>
-                <div class="inline fields">
-                    <label>Geef aan wat voor wijn:</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="wijnSoort" value="rood">
-                            <label>Rode wijn</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="wijnSoort" value="rose">
-                            <label>Rose wijn</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="wijnSoort" value="wit">
-                            <label>Witte wijn</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="wijnSoort" value="dessert">
-                            <label>Dessert wijn</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="inline field">
-                    <div class="six wide field">
-                        <label>Naam van het drankje: </label>
-                        <input type="text" name="naamDrinken">
-                    </div>
-                </div>
-                <div class="inline fields">
-                    <div class="field">
-                        <div class="ui labeled input">
-                            <label>Prijs per glas:</label>
-                            <label for="prijs" class="ui label">
-                                €
-                            </label>
-                            <input type="number" name="prijs" placeholder="prijs" step=".01">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui labeled input">
-                            <label>Prijs per fles:</label>
-                            <div class="ui label">
-                                €
+                <form action="/menu" method="post" class="ui form">
+                    <div class="inline fields">
+                        <label>Geef aan wat voor drankje het is:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="soortDrinken" value="wijn" checked="checked">
+                                <label>Wijn</label>
                             </div>
-                            <input type="number" name="wijnFlesPrijs" placeholder="prijs" step=".01">
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="soortDrinken" value="bier">
+                                <label>Bier</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="soortDrinken" value="fris">
+                                <label>Fris</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="soortDrinken" value="koffie">
+                                <label>Koffie</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label>Beschrijving:</label>
-                    <textarea name="beschrijving" rows="3"></textarea>
-                </div>
-                <div class="inline fields">
-                    <div class="field">
-                        <div class="ui toggle checkbox">
-                            <input type="checkbox" value="bestelbaar">
-                            <label>Het gerecht kan online besteld worden</label>
+                    <div class="inline fields">
+                        <label>Geef aan wat voor wijn:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="wijnSoort" value="rood">
+                                <label>Rode wijn</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="wijnSoort" value="rose">
+                                <label>Rose wijn</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="wijnSoort" value="wit">
+                                <label>Witte wijn</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="wijnSoort" value="dessert">
+                                <label>Dessert wijn</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <input type="submit" value="Toevoegen aan menu" class="ui button">              
-            </form>
+                    <div class="inline field">
+                        <div class="six wide field">
+                            <label>Naam van het drankje: </label>
+                            <input type="text" name="naamDrinken" required>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <div class="field">
+                            <div class="ui labeled input">
+                                <label class="PP">Prijs per glas:</label>
+                                <label for="prijs" class="ui label">
+                                    €
+                                </label>
+                                <input type="number" name="prijs" placeholder="prijs" step=".01" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui labeled input">
+                                <label class="PP">Prijs per fles:</label>
+                                <div class="ui label">
+                                    €
+                                </div>
+                                <input type="number" name="wijnFlesPrijs" placeholder="prijs" step=".01">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nine wide field">
+                        <label>Beschrijving:</label>
+                        <textarea name="beschrijving" rows="3"></textarea>
+                    </div>
+                    <div class="inline fields">
+                        <div class="field">
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox" value="bestelbaar">
+                                <label>Het gerecht kan online besteld worden</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Toevoegen aan menu" class="ui button">              
+                </form>
+            </div>
 
 <% include ../../partials/footer %>

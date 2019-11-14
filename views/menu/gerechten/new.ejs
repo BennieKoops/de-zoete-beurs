@@ -1,86 +1,88 @@
 <% include ../../partials/header %>
-
-            <div>
-                <h1>Nieuw gerecht</h1>
+            
+            <div class="ui container">
+                <div>
+                    <h1>Nieuw gerecht</h1>
+                </div>
+                <form action="/menu" method="post" class="ui form">
+                    <div class="inline fields">
+                        <label>Kies voor welke gang het gerecht is:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="gang" value="soep" checked="checked">
+                                <label>Soep</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="gang" value="voorgerecht">
+                                <label>Voorgerecht</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="gang" value="hoofdgerecht">
+                                <label>Hoofdgerecht</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="gang" value="nagerecht">
+                                <label>Nagerecht</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="six wide field">
+                            <label>Naam van het gerecht: </label>
+                            <input type="text" name="naamGerecht" required>
+                        </div>
+                    </div>
+                    <div class="inline field">
+                        <div class="field">
+                            <div class="ui labeled input">
+                                <label for="prijs" class="ui label">
+                                    €
+                                </label>
+                                <input type="number" name="prijs" placeholder="prijs" step=".01" min="0" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline fields">
+                        <label>Kies of het gerecht vlees, vis of vega is:</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="dieet" value="vlees" checked="checked">
+                                <label>Vlees</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="dieet" value="vis">
+                                <label>Vis</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="dieet" value="vega">
+                                <label>Vegetarisch</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nine wide field">
+                        <label>Beschrijving:</label>
+                        <textarea name="beschrijving" rows="3"></textarea>
+                    </div>
+                    <div class="inline fields">
+                        <div class="field">
+                            <div class="ui toggle checkbox">
+                                <input type="checkbox" value="bestelbaar">
+                                <label>Het gerecht kan online besteld worden</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Toevoegen aan menu" class="ui button">
+                </form>
             </div>
-            <form action="/menu" method="post" class="ui form">
-                <div class="inline fields">
-                    <label>Kies voor welke gang het gerecht is:</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="gang" value="soep" checked="checked">
-                            <label>Soep</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="gang" value="voorgerecht">
-                            <label>Voorgerecht</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="gang" value="hoofdgerecht">
-                            <label>Hoofdgerecht</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="gang" value="nagerecht">
-                            <label>Nagerecht</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="inline field">
-                    <div class="six wide field">
-                        <label>Naam van het gerecht: </label>
-                        <input type="text" name="naamGerecht" required>
-                    </div>
-                </div>
-                <div class="inline field">
-                    <div class="field">
-                        <div class="ui labeled input">
-                            <label for="prijs" class="ui label">
-                                €
-                            </label>
-                            <input type="number" name="prijs" placeholder="prijs" step=".01" min="0" required>
-                        </div>
-                    </div>
-                </div>
-                <div class="inline fields">
-                    <label>Kies of het gerecht vlees, vis of vega is:</label>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="dieet" value="vlees" checked="checked">
-                            <label>Vlees</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="dieet" value="vis">
-                            <label>Vis</label>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" name="dieet" value="vega">
-                            <label>Vegetarisch</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                    <label>Beschrijving:</label>
-                    <textarea name="beschrijving" rows="3"></textarea>
-                </div>
-                <div class="inline fields">
-                    <div class="field">
-                        <div class="ui toggle checkbox">
-                            <input type="checkbox" value="bestelbaar">
-                            <label>Het gerecht kan online besteld worden</label>
-                        </div>
-                    </div>
-                </div>
-                <input type="submit" value="Toevoegen aan menu" class="ui button">
-            </form>
 
 <% include ../../partials/footer %>
