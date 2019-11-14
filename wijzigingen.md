@@ -1,3 +1,5 @@
+1.47 prijs aangepast zodat 2 dedimalen worden weergegeven
+
 1.46 opmaak van menu en formulieren aangepast, textarea voor beschrijving gerechten/dranken toegevoegd
 
 1.45 textarea voor beschrijving product in formulier gezet en alergenen verwijdert van gerechten

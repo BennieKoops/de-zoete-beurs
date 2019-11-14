@@ -19,7 +19,7 @@
                             menu.soepen.forEach(soep => {
                                 %>
                                 <h4><%= soep.naamGerecht %></h4>
-                                <label>€ <%= soep.prijs %></label>
+                                <label>€ <%= soep.prijs.toFixed(2) %></label>
                                 <div class="sub header"><%= soep.beschrijving %></div>
                                 <%
                             });
@@ -29,7 +29,7 @@
                             menu.voorgerechten.forEach(voorgerecht => {
                                 %>
                                 <h4><%= voorgerecht.naamGerecht %></h4>
-                                <label>€ <%= voorgerecht.prijs %></label>
+                                <label>€ <%= voorgerecht.prijs.toFixed(2) %></label>
                                 <div class="sub header"><%= voorgerecht.beschrijving %></div>
                                 <%
                             });
@@ -39,7 +39,7 @@
                             menu.hoofdgerechten.forEach(hoofdgerecht => {
                                 %>
                                 <h4><%= hoofdgerecht.naamGerecht %></h4>
-                                <label>€ <%= hoofdgerecht.prijs %></label>
+                                <label>€ <%= hoofdgerecht.prijs.toFixed(2) %></label>
                                 <div class="sub header"><%= hoofdgerecht.beschrijving %></div>
                                 <%
                             });
@@ -49,7 +49,7 @@
                             menu.nagerechten.forEach(nagerecht => {
                                 %>
                                 <h4><%= nagerecht.naamGerecht %></h4>
-                                <label>€ <%= nagerecht.prijs %></label>
+                                <label>€ <%= nagerecht.prijs.toFixed(2) %></label>
                                 <div class="sub header"><%= nagerecht.beschrijving %></div>
                                 <%
                             });
@@ -62,8 +62,8 @@
                         menu.wijnen.forEach(wijn => {
                             %>
                             <h4><%= wijn.naamDrinken %></h4>
-                            <label>per glas: € <%= wijn.prijs %></label>
-                            <label>per fles: € <%= wijn.wijnFlesPrijs %></label>
+                            <label>per glas: € <%= wijn.prijs.toFixed(2) %></label>
+                            <label>per fles: € <%= wijn.wijnFlesPrijs.toFixed(2) %></label>
                             <div class="sub header"><%= wijn.beschrijving %></div>
                             <%
                         });
@@ -73,7 +73,7 @@
                         menu.bieren.forEach(bier => {
                             %>
                             <h4><%= bier.naamDrinken %></h4>
-                            <label>€ <%= bier.prijs %></label>
+                            <label>€ <%= bier.prijs.toFixed(2) %></label>
                             <div class="sub header"><%= bier.beschrijving %></div>
                             <%
                         });
@@ -83,7 +83,7 @@
                         menu.frisdranken.forEach(frisdrank => {
                             %>
                             <h4><%= frisdrank.naamDrinken %></h4>
-                            <label>€ <%= frisdrank.prijs %></label>
+                            <label>€ <%= frisdrank.prijs.toFixed(2) %></label>
                             <div class="sub header"><%= frisdrank.beschrijving %></div>
                             <%
                         });
@@ -93,7 +93,7 @@
                         menu.koffies.forEach(koffie => {
                             %>
                             <h4><%= koffie.naamDrinken %></h4>
-                            <label>€ <%= frisdrank.prijs %></label>
+                            <label>€ <%= frisdrank.prijs.toFixed(2) %></label>
                             <div class="sub header"><%= frisdrank.beschrijving %></div>
                             <%
                         });
