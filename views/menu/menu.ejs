@@ -14,90 +14,131 @@
                 <div class="ui stackable two column grid">
                     <div class="column">
                         <h2>Gerechten</h2>
-                        <H3>Soepen</H3>
+                        <h3>Soepen</h3>
                         <% 
                             menu.soepen.forEach(soep => {
                                 %>
-                                <h4><%= soep.naamGerecht %></h4>
-                                <label>€ <%= soep.prijs.toFixed(2) %></label>
-                                <div class="sub header"><%= soep.beschrijving %></div>
+                                <h4 class="ui header">
+                                    <%= soep.naamGerecht %>
+                                    <div class="sub header">
+                                        <label>€ <%= soep.prijs.toFixed(2) %></label> 
+                                        <%= soep.beschrijving %>
+                                    </div>
+                                </h4>
                                 <%
                             });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Voorgerechten</h3>
                         <%
                             menu.voorgerechten.forEach(voorgerecht => {
                                 %>
-                                <h4><%= voorgerecht.naamGerecht %></h4>
-                                <label>€ <%= voorgerecht.prijs.toFixed(2) %></label>
-                                <div class="sub header"><%= voorgerecht.beschrijving %></div>
+                                <h4 class="ui header">
+                                    <%= voorgerecht.naamGerecht %>
+                                    <div class="sub header">
+                                        <label>€ <%= voorgerecht.prijs.toFixed(2) %></label>
+                                        <%= voorgerecht.beschrijving %>
+                                    </div>
+                                </h4>
                                 <%
                             });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Hoofdgerechten</h3>
                         <%
                             menu.hoofdgerechten.forEach(hoofdgerecht => {
                                 %>
-                                <h4><%= hoofdgerecht.naamGerecht %></h4>
-                                <label>€ <%= hoofdgerecht.prijs.toFixed(2) %></label>
-                                <div class="sub header"><%= hoofdgerecht.beschrijving %></div>
+                                <h4 class="ui header">
+                                    <%= hoofdgerecht.naamGerecht %>
+                                    <div class="sub header">
+                                        <label>€ <%= hoofdgerecht.prijs.toFixed(2) %></label>
+                                        <%= hoofdgerecht.beschrijving %>
+                                    </div>
+                                </h4>
                                 <%
                             });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Nagerechten</h3>
                         <%
                             menu.nagerechten.forEach(nagerecht => {
                                 %>
-                                <h4><%= nagerecht.naamGerecht %></h4>
-                                <label>€ <%= nagerecht.prijs.toFixed(2) %></label>
-                                <div class="sub header"><%= nagerecht.beschrijving %></div>
+                                <h4 class="ui header">
+                                    <%= nagerecht.naamGerecht %>
+                                    <div class="sub header">
+                                        <label>€ <%= nagerecht.prijs.toFixed(2) %></label>
+                                        <%= nagerecht.beschrijving %>
+                                    </div>
+                                </h4>
                                 <%
                             });
                         %>
+                        <div class="ui section divider"></div>
                     </div>
                     <div class="column">
                         <h2>Dranken</h2>
+                        <div class="ui section divider"></div>
                         <h3>Wijn</h3>
                         <%
                         menu.wijnen.forEach(wijn => {
                             %>
-                            <h4><%= wijn.naamDrinken %></h4>
-                            <label>per glas: € <%= wijn.prijs.toFixed(2) %></label>
-                            <label>per fles: € <%= wijn.wijnFlesPrijs.toFixed(2) %></label>
-                            <div class="sub header"><%= wijn.beschrijving %></div>
+                            <h4 class="ui header">
+                                <%= wijn.naamDrinken %>
+                                <div class="sub header">
+                                    <label>per glas: € <%= wijn.prijs.toFixed(2) %></label>
+                                    <label>per fles: € <%= wijn.wijnFlesPrijs.toFixed(2) %></label>
+                                    <%= wijn.beschrijving %>
+                                </div>
+                            </h4>
                             <%
                         });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Bier</h3>
                         <%
                         menu.bieren.forEach(bier => {
                             %>
-                            <h4><%= bier.naamDrinken %></h4>
-                            <label>€ <%= bier.prijs.toFixed(2) %></label>
-                            <div class="sub header"><%= bier.beschrijving %></div>
+                            <h4 class="ui header">
+                                <%= bier.naamDrinken %>
+                                <div class="sub header">
+                                    <label>€ <%= bier.prijs.toFixed(2) %></label>
+                                    <%= bier.beschrijving %>
+                                </div>
+                            </h4>
                             <%
                         });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Frisdrank</h3>
                         <%
                         menu.frisdranken.forEach(frisdrank => {
                             %>
-                            <h4><%= frisdrank.naamDrinken %></h4>
-                            <label>€ <%= frisdrank.prijs.toFixed(2) %></label>
-                            <div class="sub header"><%= frisdrank.beschrijving %></div>
+                            <h4 class="ui header">
+                                <%= frisdrank.naamDrinken %>
+                                <div class="sub header">
+                                    <label>€ <%= frisdrank.prijs.toFixed(2) %></label>
+                                    <%= frisdrank.beschrijving %>
+                                </div>
+                            </h4>
                             <%
                         });
                         %>
+                        <div class="ui section divider"></div>
                         <h3>Koffie</h3>
                         <%
                         menu.koffies.forEach(koffie => {
                             %>
-                            <h4><%= koffie.naamDrinken %></h4>
-                            <label>€ <%= frisdrank.prijs.toFixed(2) %></label>
-                            <div class="sub header"><%= frisdrank.beschrijving %></div>
+                            <h4 class="ui header">
+                                <%= koffie.naamDrinken %>
+                                <div class="sub header">
+                                    <label>€ <%= frisdrank.prijs.toFixed(2) %></label> 
+                                    <%= frisdrank.beschrijving %>
+                                </div>
+                            </h4>
                             <%
                         });
                         %>
+                        <div class="ui section divider"></div>
                     </div>
                 </div>
             </div>

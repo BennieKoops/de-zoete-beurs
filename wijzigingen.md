@@ -1,3 +1,5 @@
+1.48 menu aangepast zodat beschrijving en prijs in subheader staan
+
 1.47 prijs aangepast zodat 2 dedimalen worden weergegeven
 
 1.46 opmaak van menu en formulieren aangepast, textarea voor beschrijving gerechten/dranken toegevoegd
