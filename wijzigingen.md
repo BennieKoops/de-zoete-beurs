@@ -1,3 +1,5 @@
+1.50 name waarde aan bestelbaar input checkbox toegevoegd zodat de waarde in de db terecht komt
+
 1.49 lijn uit menu gehaald tussen dranken en wijn, ui container op index gezet
 
 1.48 menu aangepast zodat beschrijving en prijs in subheader staan
