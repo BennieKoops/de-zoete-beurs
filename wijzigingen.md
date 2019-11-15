@@ -1,3 +1,5 @@
+1.49 lijn uit menu gehaald tussen dranken en wijn, ui container op index gezet
+
 1.48 menu aangepast zodat beschrijving en prijs in subheader staan
 
 1.47 prijs aangepast zodat 2 dedimalen worden weergegeven
